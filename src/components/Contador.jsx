@@ -20,6 +20,9 @@ const Contador = () => {
             <button onClick={()=> setNumber(number + 1)} className="btn btn-primary mr-2">Increase</button>
             <button onClick={decrease} className="btn btn-danger mr-2">Decrease</button>
             <button onClick={()=> setNumber(reset)} className="btn btn-info">Reset</button>
+            <div className="mt-2">
+                <span className="text-warning"> This number is: {number % 2 === 0 ? 'Even' : 'Odd'}</span>
+            </div>
             <hr/>
             <input 
             type="number" 
